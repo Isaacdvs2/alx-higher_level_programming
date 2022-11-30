@@ -2,4 +2,4 @@
 
 for elements in range(97, 123):
 	if elements != 101 and elements != 113:
-		print("{}".format(chr(elements)))
+		print("{}".format(chr(elements)),end="")
