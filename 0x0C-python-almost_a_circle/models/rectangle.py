@@ -79,3 +79,13 @@ class Rectangle(Base):
             shape += ("#" * self.width) + "\n"
         print(shape, end='')
 
+    def __str__(self):
+        """ This method overrides the built-in method to return the string
+        representation of the rectangle class. The desired output is [Rectangle] (<id>) <x>/<y> - <width>/<height> """
+
+        rect_str = "[Rectangle] "
+        rect_id = "({}) ".format(self.id)
+        rect_pos = "{}/{} - ".format(self.x, self.y)
+        rect_dims = "{}/{}".format(self.width, self.height)
+
+        return rect_str + rect_id + rect_pos + rect_dims
