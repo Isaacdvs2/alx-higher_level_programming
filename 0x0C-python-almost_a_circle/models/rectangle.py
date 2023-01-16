@@ -89,3 +89,13 @@ class Rectangle(Base):
         rect_dims = "{}/{}".format(self.width, self.height)
 
         return rect_str + rect_id + rect_pos + rect_dims
+
+    def update(self, *args, **kwargs):
+        """ the method to update the rectangle's properties. accepts variable number
+        of args"""
+        # check if args were passed
+        if args is not None and len(args) is not 0:
+            list_attr = ['id', 'width', 'height', 'x', 'y']
+            # if args were passed, set their order using the setattr method
+            for i in range(len(args)):
+                setattr(self, list_atr[i], args[i])
