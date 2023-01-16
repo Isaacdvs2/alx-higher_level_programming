@@ -92,10 +92,14 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """ the method to update the rectangle's properties. accepts variable number
-        of args"""
+        of args and keyword args i.e kwargs"""
         # check if args were passed
         if args is not None and len(args) is not 0:
             list_attr = ['id', 'width', 'height', 'x', 'y']
             # if args were passed, set their order using the setattr method
             for i in range(len(args)):
                 setattr(self, list_atr[i], args[i])
+        # update after adding kwargs to the prototype
+        else:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
