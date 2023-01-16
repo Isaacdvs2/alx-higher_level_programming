@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 
 """ The rectangle module for handling rectangle related stuff"""
+#import the base class from the base module
+from models.base import Base
 
 class Rectangle(Base):
     """ the clsaa rectangle is a subclass of the base class with
@@ -67,3 +69,13 @@ class Rectangle(Base):
     def area(self):
         """ the area function computes the area of the rectangle """
         return (self.__width * self.__height)
+
+    def display(self):
+        """" The display method that prints the rectangle instance with the 
+        character #.i.e., using the height and width, print the shape of the rectangle """
+        shape = self.y * "\n"
+        for i in range(self.height):
+            shape += (" " * self.x)
+            shape += ("#" * self.width) + "\n"
+        print(shape, end='')
+
