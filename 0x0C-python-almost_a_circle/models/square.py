@@ -70,4 +70,4 @@ class Square(Rectangle):
             else:
                 dict_res[key] = getattr(self, key)
 
-
+        return dict_res

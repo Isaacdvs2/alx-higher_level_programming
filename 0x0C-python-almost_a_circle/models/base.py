@@ -2,6 +2,11 @@
 
 """ This is a base class module """
 
+import json
+import csv
+import os.path
+
+
 class Base:
     """The base class for all other modules in the project.
         Its goal is to manage the id attribute """
