@@ -2,7 +2,7 @@
 ## ALX SE HL programming SQL Intro
 <br>
 <hr>
-### Description
+## Description
 
 The SQL intro project teaches us about the basics of sql(MySQL) such as:
 
