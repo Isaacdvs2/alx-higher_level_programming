@@ -3,7 +3,8 @@
 <br>
 <hr>
 ### Description
-The SQL intro sections teaches us about the basics of sql(MySQL) such as:
+
+The SQL intro project teaches us about the basics of sql(MySQL) such as:
 
  * What is a database
  * DML vs DDL statements
