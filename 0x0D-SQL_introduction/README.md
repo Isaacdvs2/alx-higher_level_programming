@@ -1,7 +1,8 @@
-#SQL Introduction
-##ALX SE HL programming SQL Intro
+# SQL Introduction
+## ALX SE HL programming SQL Intro
 <br>
-###Description
+<hr>
+### Description
 The SQL intro sections teaches us about the basics of sql(MySQL) such as:
  * What is a database
  * DML vs DDL statements
@@ -9,4 +10,4 @@ The SQL intro sections teaches us about the basics of sql(MySQL) such as:
  * Creating simple query statements
 <hr>
 This repo contains tasks performed for the SQL intro project
-Author: <see authors file>
+Author: see authors file
