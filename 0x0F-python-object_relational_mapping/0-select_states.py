@@ -8,6 +8,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3], host='localhost', port=3306)
     crs = db.cursor()
     crs.execute("SELECT * FROM `states`")
-    
-    for state in crs.fetchall():
+    states = crs.fetchall()
+
+    for state in states:
         print(state)
